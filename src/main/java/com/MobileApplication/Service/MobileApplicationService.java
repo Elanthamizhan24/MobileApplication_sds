@@ -73,11 +73,11 @@ public List<MobileApplication>getException(String excp)throws NameNotFoundExcept
 		return md.getExpection(excp); 
 	}
 	}
-public List<MobileApplication>getEx(int ids)throws IdNotFoundException{
-	if(md.getEx(ids).isEmpty()) {
+public List<MobileApplication>getExs(int ids)throws IdNotFoundException{
+	if(md.getExs(ids).isEmpty()) {
 		throw new IdNotFoundException("The Id is Not in the List");
 	}else { 
-		return md.getEx(ids);
+		return md.getExs(ids);
 	}
 }
 //public List<MobileApplication>getObj(List<MobileApplication>m1)throws ObjectNotFoundException{

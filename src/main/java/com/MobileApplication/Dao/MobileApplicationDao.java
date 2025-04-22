@@ -62,8 +62,8 @@ public List<MobileApplication>getExpection(String excp)
 {
 	return mr.getException(excp);
 }
-public List<MobileApplication>getEx(int ids){
-	return mr.getEx(ids);
+public List<MobileApplication>getExs(int ids){
+	return mr.getExs(ids);
 }
 //public List<MobileApplication>getObj(List<MobileApplication>m1){
 //	return mr.getObj(m1);

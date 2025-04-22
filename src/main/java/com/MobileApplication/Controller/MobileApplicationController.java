@@ -83,9 +83,9 @@ public List<MobileApplication>getException(@PathVariable String excp)throws Name
 	return mp.getException(excp);
 }
 
-@GetMapping(value="/getEx/{ids}")
+@GetMapping(value="/getExs/{ids}")
 public List<MobileApplication>getEx(@PathVariable int ids)throws IdNotFoundException{
-	return mp.getEx(ids);
+	return mp.getExs(ids);
 }
 
 //@GetMapping(value="/getObj/{ob}")

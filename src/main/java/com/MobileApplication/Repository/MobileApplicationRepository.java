@@ -44,7 +44,7 @@ public interface MobileApplicationRepository  extends JpaRepository<MobileApplic
 	public List<MobileApplication>getException(@Param("excp") String excp);
 	
 	@Query(value="select * from mobileapplication where id=?;",nativeQuery=true)
-	public List<MobileApplication>getEx(@Param("ids")int ids);
+	public List<MobileApplication>getExs(@Param("ids")int ids);
 	
 	@Query(value="select * from mobileapplication where id=?;",nativeQuery=true)
 	public List<MobileApplication>getObj(@Param("m1")int id);
